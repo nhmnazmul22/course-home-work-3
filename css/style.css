@@ -1,0 +1,461 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --Blues-50: #eff9ff;
+  --Blues-100: #def1ff;
+  --Blues-200: #b6e6ff;
+  --Blues-300: #75d4ff;
+  --Blues-400: #2cbeff;
+  --Blues-500: #00a4f4;
+  --Blues-600: #0084d4;
+  --Blues-700: #0069ab;
+  --Blues-800: #00598d;
+  --Blues-900: #064a74;
+  --Blues-950: #042f4d;
+  --Neutrals-50: #f6f6f6;
+  --Neutrals-100: #e7e7e7;
+  --Neutrals-200: #d1d1d1;
+  --Neutrals-300: #b0b0b0;
+  --Neutrals-400: #888888;
+  --Neutrals-500: #6d6d6d;
+  --Neutrals-600: #5d5d5d;
+  --Neutrals-700: #4f4f4f;
+  --Neutrals-800: #454545;
+  --Neutrals-900: #3d3d3d;
+  --Neutrals-950: #000000;
+  --linier-blue-gradient: linear-gradient(
+    100deg,
+    rgb(167, 226, 255),
+    rgb(0, 149, 222)
+  );
+}
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: var(--Neutrals-50);
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+p {
+  margin-bottom: 0 !important;
+}
+button {
+  outline: none;
+  border: none;
+}
+
+.custom-btn {
+  padding: 1rem 1.5rem;
+  background: var(--linier-blue-gradient);
+  outline: 0;
+  border: 0;
+  border-radius: 12px;
+  cursor: pointer;
+}
+button.custom-btn a {
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: 600;
+}
+.text-gradient {
+  background: -webkit-linear-gradient(
+    100deg,
+    rgb(136, 216, 255),
+    rgb(1, 121, 180)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+/* =========== Nav bar Styling Start ============= */
+.nav-item .nav-link {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--Neutrals-900);
+  transition: color 0.3s linear;
+}
+.navbar-nav .nav-item:not(:last-child) {
+  margin-right: 1.4rem;
+}
+.nav-item .nav-link.active {
+  color: var(--Blues-700);
+}
+.nav-item .nav-link:hover {
+  color: var(--Neutrals-500);
+}
+.btn-box button {
+  border-radius: 12px;
+  box-shadow: 0px 10px 30px 0 rgba(44, 190, 255, 0.15);
+}
+.navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: 0px 0px 3px 0 rgba(44, 190, 255, 1);
+}
+/* =========== Nav bar Styling End ============= */
+/* =========== Header Styling Start ============= */
+
+.header-content h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 54px;
+  margin-bottom: 2rem;
+}
+.header-content p {
+  font-size: 1rem;
+  font-weight: 500;
+}
+.header-content p span {
+  color: var(--Blues-600);
+  font-weight: 600;
+}
+.header-content .custom-btn {
+  padding: 1.2rem 2.3rem;
+  box-shadow: -8px 8px 28px 0 rgba(0, 0, 0, 0.06);
+}
+.header-content .custom-btn a svg {
+  margin-left: 0.7rem;
+}
+.main-img img {
+  width: 550px;
+}
+.clients p {
+  font-size: 1rem;
+  color: var(--Neutrals-300);
+  font-weight: 500;
+}
+.doted-svg {
+  bottom: -330px;
+}
+
+.appointment-box {
+  width: 296px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: -8px 8px 28px 0 rgba(0, 0, 0, 0.06);
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  z-index: 10;
+  animation: moving-box-1 1s linear infinite alternate;
+}
+.appointment-box p {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--Blues-700);
+}
+
+.happy-customers {
+  width: 241px;
+  padding: 0.1rem;
+  height: auto;
+  background: linear-gradient(100deg, rgb(197, 236, 255), rgb(149, 221, 255));
+  border-radius: 9.5px;
+  position: absolute;
+  top: 140px;
+  right: 0;
+  z-index: 10;
+  animation: moving-box-2 1s linear infinite alternate;
+}
+
+.customers {
+  border-radius: 9.5px;
+  background: radial-gradient(#ffffff 34%, #eef9ff 98%);
+  box-shadow: -8px 8px 28px 0 rgba(0, 0, 0, 0.06);
+}
+.customers-count p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--Neutrals-900);
+}
+.customers-count p span {
+  color: var(--Blues-500);
+  font-weight: 700;
+}
+.person-img {
+  margin-right: -10px;
+}
+.customers .title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--Blues-500);
+  margin-top: 0.8rem;
+}
+.rating p {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--Neutrals-900);
+  margin-left: 0.8rem;
+}
+.qoute-text {
+  width: 300px;
+  padding: 0.1rem;
+  background: linear-gradient(100deg, rgb(197, 236, 255), rgb(149, 221, 255));
+  border-radius: 9.5px;
+  position: absolute;
+  bottom: -60px;
+  right: 100px;
+  z-index: 10;
+}
+.qoute-text .text-box {
+  padding: 1.3rem;
+  background: linear-gradient(rgb(233, 246, 255), rgb(251, 253, 255));
+  border-radius: 9.5px;
+  position: relative;
+}
+.qoute-icon {
+  position: absolute;
+  top: -35px;
+  left: 20px;
+}
+.text-box p {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--Neutrals-900);
+}
+/* =========== Header Styling End ============= */
+
+/* =========== Appointment Styling Start ============= */
+.booking-sec {
+  z-index: 11;
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+}
+.booking-sec .svg-box {
+  position: absolute;
+  bottom: -55px;
+  z-index: -1;
+  left: 0;
+  animation: moving-box-3 1s linear infinite alternate;
+}
+
+.appointment {
+  width: 100%;
+  padding: 0.1rem;
+  background: linear-gradient(100deg, rgb(197, 236, 255), rgb(149, 221, 255));
+  border-radius: 28px;
+  box-shadow: 3px 9px 21px 0 rgba(0, 0, 0, 0.06);
+}
+.appointment-book {
+  width: 100%;
+  margin: 0 auto;
+  background: radial-gradient(#ffffff 34%, #eef9ff 98%);
+  border-radius: 28px;
+}
+.appointment-book h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--Blues-700);
+}
+.appointment-book .input-box label {
+  font-size: 1.1rem;
+  color: var(--Neutrals-400);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.appointment-book .input-box label svg {
+  margin-right: 0.8rem;
+}
+.appointment-book .input-box input {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--Neutrals-100);
+  border-radius: 12px;
+  outline: none;
+  font-size: 1rem;
+}
+.appointment-book .input-box input::placeholder {
+  color: var(--Neutrals-100);
+}
+.book-btn button {
+  border: none;
+  outline: none;
+  padding: 1.1rem 1.3rem;
+  background: var(--Blues-500);
+  border-radius: 10px;
+}
+.book-btn button a {
+  color: #fff;
+  font-weight: 700;
+}
+/* =========== Appointment Styling End ============= */
+/* =========== Services Styling Start ============= */
+.service-box h2 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.service-box p.service-des {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--Neutrals-300);
+  text-align: center;
+  width: 60%;
+  margin-bottom: 5rem;
+  margin: 0 auto;
+}
+.service {
+  padding: 0.12rem;
+  background: linear-gradient(100deg, rgb(197, 236, 255), rgb(149, 221, 255));
+  border-radius: 24px;
+  box-shadow: 3px 9px 20px 0 rgba(0, 0, 0, 0.04);
+}
+.service-box-content {
+  padding: 3rem;
+  background: #ffffff;
+  border-radius: 24px;
+}
+.service-content h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--Blues-700);
+  margin: 1.4rem 0;
+}
+.service-content p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--Neutrals-500);
+}
+.service-sec .svg-box-1 {
+  position: absolute;
+  top: 180px;
+  left: -60px;
+}
+.service-sec .svg-box-2 {
+  position: absolute;
+  top: 180px;
+  right: -60px;
+}
+/* =========== Services Styling End ============= */
+/* =========== Story Styling Start ============= */
+.story-box {
+  padding: 0.12rem;
+  background: linear-gradient(100deg, rgb(197, 236, 255), rgb(149, 221, 255));
+  border-radius: 24px;
+  box-shadow: 3px 9px 20px 0 rgba(0, 0, 0, 0.04);
+}
+.story {
+  padding: 3rem;
+  background: radial-gradient(#ffffff 34%, #eef9ff 98%);
+  border-radius: 24px;
+}
+.story h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.story-content p {
+  font-size: 1rem;
+  color: var(--Neutrals-500);
+  font-weight: 500;
+  line-height: 24px;
+}
+.story-content button {
+  background: var(--Blues-500);
+  padding: 1.3rem 2.3rem;
+  border-radius: 12px;
+}
+.story-content button a {
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+/* =========== Story Styling End ============= */
+/* =========== Animation Start ============= */
+@keyframes moving-box-1 {
+  0% {
+    left: 0px;
+  }
+  100% {
+    left: 20px;
+  }
+}
+@keyframes moving-box-2 {
+  0% {
+    right: 0px;
+  }
+  100% {
+    right: 20px;
+  }
+}
+@keyframes moving-box-3 {
+  0% {
+    bottom: -55px;
+  }
+  100% {
+    bottom: -75px;
+  }
+}
+/* =========== Animation End ============= */
+
+/* =========== Responsive Start ============= */
+@media (max-width: 1199.98px) {
+  .doted-svg {
+    bottom: -160px;
+  }
+}
+@media (max-width: 992px) {
+  .mobile-menu {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px 0 rgba(0, 0, 0, 0.05);
+  }
+  .btn-box button {
+    width: 100%;
+    box-shadow: none;
+  }
+  .qoute-text {
+    bottom: -30px;
+    right: 50px;
+  }
+}
+@media (max-width: 767.98px) {
+  .qoute-text {
+    position: static;
+    width: 100%;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .happy-customers {
+    top: 200px;
+  }
+  .appointment-box {
+    bottom: 160px;
+  }
+}
+@media (max-width: 556.98px) {
+  .appointment-box {
+    position: static;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .happy-customers {
+    position: static;
+    width: 100%;
+    margin-top: 1rem;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 499.98px) {
+  .header-content h1 {
+    font-size: 2.5rem;
+  }
+  .header-content .custom-btn a {
+    font-size: 1.2rem;
+  }
+}
+
+/* =========== Responsive End ============= */
