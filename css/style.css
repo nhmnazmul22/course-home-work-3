@@ -411,6 +411,18 @@ button.custom-btn a {
 .line-box {
   margin-left: 1.58rem;
 }
+.plus-svg-box {
+  position: absolute;
+  top: 100px;
+  right: -12px;
+}
+.work-img-box .appointment-box {
+  width: 340px;
+  border-radius: 8px;
+  bottom: 40px;
+  left: 35%;
+  animation: none;
+}
 /* =========== Work Styling End ============= */
 /* =========== Animation Start ============= */
 @keyframes moving-box-1 {
